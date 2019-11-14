@@ -6,10 +6,10 @@ void display(void);
 int main()
 {
     top = -1;
-    printf("Enter size of stack[MAX=100]: ");
+    printf("Enter size of stack[MAX=100]: \n");
     scanf("%d", &n);
     printf("\n\t STACK OPERATIONS USING ARRAY");
-    printf("\n\t 1. PUSH \n\t 2. POP \n\t 3. DISPLAY \n\t 4. EXIT");
+    printf("\n\t 1. PUSH \n\t 2. POP \n\t 3. DISPLAY \n\t 4. EXIT\n");
     do
     {
         printf("Enter the choice: ");
@@ -51,7 +51,7 @@ void push()
         printf("Stack Overflow\n");
     else
     {   
-        printf("Enter value to be pushed");
+        printf("Enter value to be pushed ");
         scanf("%d", &n);
         top++;
         stack[top] = n;
@@ -74,8 +74,8 @@ void display()
         printf("Stack elements are:\n");
         for (i = top; i >= 0; i--)
             printf("%d ", stack[i]);
-        printf("\n Press next choice");
+        printf("\n Press next choice\n");
     }
     else
-        printf("The STACK is empty");
+        printf("The STACK is empty\n");
 }
